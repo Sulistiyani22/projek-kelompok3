@@ -1,0 +1,330 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-section h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  .testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+  }
+  
+  .testimonials h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .review img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .review strong {
+    font-size: 1.1em;
+  }
+  
+  .review p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    color: #333;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1a202c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+  
+  .container {
+    margin-top: 100px;
+  }
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .gallery-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .aspect-video {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+  }
+  
+  .aspect-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .promotional-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .video-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video {
+    flex: 1 1 60%;
+    max-width: 560px; /* Membatasi ukuran maksimum */
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .video-description {
+    flex: 1 1 30%;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .video-description h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .video-description p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  @media (min-width: 768px) {
+    .video-content {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    .video-description {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+  
+  .why-choose-us {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .feature-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.05);
+    background-color: #f3f3f3;
+  }
+  
+  .feature-item i {
+    color: #fbbf24; /* Warna ikon */
+  }
+  
+  .feature-item h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .brands {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .brands {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .brand-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .brand-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brand-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .produk-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  @media (min-width: 640px) {
+    .produk-items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .produk-items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .produk-items {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .produk-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .produk-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .produk-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d97706;
+  }
+
+  /* Custom Styling for Form */
+#purchase-form {
+    display: none; /* Hidden initially */
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  #purchase-form .form-container {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+    

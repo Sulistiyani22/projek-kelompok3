@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelian</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 p-10">
+  <header class="header bg-gray-900 text-white flex justify-between items-center p-5 rounded-lg">
+    <a href="web.html" class="text-yellow-500 font-bold">← Back to Home</a>
+    <h1 class="text-2xl font-bold">Pembelian</h1>
+  </header>
+
+  <section class="purchase-form bg-white p-10 rounded-lg shadow-lg mt-10">
+    <h2 class="text-xl font-bold mb-5">Isi Form Pembelian</h2>
+    <form action="#" method="post" class="flex flex-col gap-4">
+      <label>
+        Nama Lengkap:
+        <input type="text" name="name" class="border border-gray-300 rounded-lg p-2 w-full" placeholder="Masukkan nama Anda" required>
+      </label>
+      <label>
+        Alamat Pengiriman:
+        <textarea name="address" class="border border-gray-300 rounded-lg p-2 w-full" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+      </label>
+      <label>
+        Nomor Telepon:
+        <input type="tel" name="phone" class="border border-gray-300 rounded-lg p-2 w-full" placeholder="Masukkan nomor telepon Anda" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" class="border border-gray-300 rounded-lg p-2 w-full" placeholder="Masukkan email anda untuk pengiriman invoice" required>
+      </label>
+      <button type="submit" class="bg-yellow-500 text-white py-2 px-4 rounded-lg font-bold hover:bg-yellow-600">
+        Konfirmasi Pembelian
+      </button>
+    </form>
+  </section>
+</body>
+</html>
